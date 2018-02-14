@@ -8,19 +8,20 @@ namespace KalkulatorKrokow
 {
     class Farmer
     {
-        public int BagsOfFeed;
+        //hermetyzacja BagsOfFeed  nie mozna zmodyfikowac,tylko odczyt - ide zrobilo to automatycznie za pomoca wpisania: prop i dwukrotnie nacisniecie TAB -kwestia zmiany nazwy domyślnej
+        public int BagsOfFeed { get; private set; }
         public const int FeedMultiplier = 30;
 
-        private int numberOffCows;
+        private int numberOfCows;
         public int NumberOfCows
         {
             get
             {
-                return numberOffCows;
+                return numberOfCows;
             }
             set
-            {   numberOffCows = value;
-                BagsOfFeed = numberOffCows * FeedMultiplier;
+            {   numberOfCows = value;
+                BagsOfFeed = numberOfCows * FeedMultiplier;
             }
         }
     }

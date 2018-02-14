@@ -65,6 +65,7 @@
             0,
             0,
             0});
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged_1);
             // 
             // calculate
             // 
@@ -74,6 +75,7 @@
             this.calculate.TabIndex = 2;
             this.calculate.Text = "Oblicz";
             this.calculate.UseVisualStyleBackColor = true;
+            this.calculate.Click += new System.EventHandler(this.calculate_Click_1);
             // 
             // Form1
             // 
